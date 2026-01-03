@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/index.xhtml</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/address/Create.xhtml</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/src/java/jsf/ClientController.java</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/resources/css/styles.css</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/clientList.xhtml</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/resources/css/jsfcrud.css</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/WEB-INF/glassfish-resources.xml</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/src/java/jpa/sessions/RecruiterFacade.java</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/src/java/jsf/LoginController.java</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/login.xhtml</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/src/java/jsf/util/AuthorizationFilter.java</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/template.xhtml</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/src/java/jpa/sessions/ConsultantFacade.java</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/src/java/jsf/SignupController.java</file>
+            <file>file:/C:/Users/mohd5/Documents/NetBeansProjects/ConsultingAgencyB04/web/signup.xhtml</file>
+        </group>
+    </open-files>
+</project-private>
