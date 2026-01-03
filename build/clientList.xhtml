@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Client List</title>
+
+    <!-- CSS -->
+    <h:outputStylesheet library="css" name="styles.css"/>
+</h:head>
+
+<h:body>
+    <h1>Client List (Loaded From Database)</h1>
+
+    <!-- Sample Image -->
+    <h:graphicImage library="images" name="office.jpg"
+                    style="width:200px;margin-bottom:20px;" />
+
+    <h:form>
+
+        <h:dataTable value="#{clientController.items}" var="c"
+                     styleClass="table" headerClass="thead">
+
+            <h:column>
+                <f:facet name="header">Client Name</f:facet>
+                #{c.clientPK.clientName}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Dept No</f:facet>
+                #{c.clientPK.clientDepartmentNumber}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Contact Email</f:facet>
+                #{c.contactEmail}
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">Billing Address</f:facet>
+                #{c.billingAddress.line1}, #{c.billingAddress.city}
+            </h:column>
+
+        </h:dataTable>
+
+        <br/>
+
+        <!-- Use existing pagination -->
+        <h:commandButton value="Previous" action="#{clientController.previous}"/>
+        <h:commandButton value="Next" action="#{clientController.next}"/>
+
+    </h:form>
+</h:body>
+</html>
+
+

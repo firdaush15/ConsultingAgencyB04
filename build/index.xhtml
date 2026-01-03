@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Consulting Agency Dashboard</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    <h:body>
+        <h:form style="float: right; padding: 10px;" rendered="#{loginController.loggedIn}">
+            <span style="font-weight: bold; margin-right: 15px;">
+                <h:outputText value="#{loginController.welcomeMessage}" />
+            </span>
+            <h:commandButton action="#{loginController.logout}" value="Logout" />
+        </h:form>
+        
+        <div style="padding: 20px;">
+            <h2>Consulting Agency Dashboard</h2>
+            
+            <h:panelGroup styleClass="dashboard-section">
+                <h3>Billables</h3>
+                <h:link outcome="/billable/List" value="View All Billable Items"/>
+            </h:panelGroup>
+
+            <br /><br />
+
+            <h:panelGroup rendered="#{loginController.recruiter}">
+                <div style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                    <h:outputText value="Recruiter Administration" style="font-weight: bold; font-size: 1.2em;"/>
+                    <hr/>
+                    <ul>
+                        <li><h:link outcome="/recruiter/List" value="Manage Recruiters"/></li>
+                        <li><h:link outcome="/client/List" value="Manage Clients"/></li>
+                        <li><h:link outcome="/project/List" value="Manage Projects"/></li>
+                        <li><h:link outcome="/consultant/List" value="Manage Consultants"/></li>
+                        <li><h:link outcome="/consultantStatus/List" value="Manage Consultant Statuses"/></li>
+                        <li><h:link outcome="/address/List" value="Manage Addresses"/></li>
+                    </ul>
+                </div>
+            </h:panelGroup>
+            
+            <h:panelGroup rendered="#{loginController.consultant}">
+                 <div style="background-color: #e3f2fd; padding: 15px; border: 1px solid #90caf9; border-radius: 5px;">
+                    <h:outputText value="Consultant Workspace" style="font-weight: bold; font-size: 1.2em;"/>
+                    <hr/>
+                    <p>Welcome to your workspace. Use the Billables link above to log your hours.</p>
+                </div>
+            </h:panelGroup>
+
+        </div>
+    </h:body>
+</html>
